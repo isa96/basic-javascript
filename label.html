@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label</title>
+</head>
+<body>
+    <script>
+        loopi:
+        for (let i = 0; i < 10; i++){
+            loopj:
+            for (let j = 0; j < 100; j++){
+                if (j > 10){
+                    continue loopi;
+                }
+                document.writeln(`<p>${i} - ${j}</p>`);
+            }
+        }
+
+    </script>
+</body>
+</html>

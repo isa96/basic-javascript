@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+      function createAdder(value){
+          const owner = "aaa";
+          function add(param){
+              console.info(owner);
+              return value + param;
+          }
+          return add;
+      }
+      const addTwo = createAdder(2);
+      console.info(addTwo(10));
+        
+    </script>
+</body>
+</html>

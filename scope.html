@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+      // global scope
+      let counter = 0;
+
+      // global scope
+      function hitMe(){
+          // local scope hitMe
+          counter ++;
+      }
+      
+      // global scope
+      function other(){
+        // local scope other
+      }
+
+      hitMe();
+      console.info(counter);
+        
+    </script>
+</body>
+</html>

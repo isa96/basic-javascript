@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Generator</title>
+</head>
+<body>
+    <script>
+      function* createName(){
+          yield "aaa";
+          yield "bbb";
+      }
+      const names = createName();
+      
+      for (const name of names){
+          console.info(name);
+      }
+        
+    </script>
+</body>
+</html>

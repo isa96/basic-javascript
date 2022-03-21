@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getter and Setter</title>
+</head>
+<body>
+    <script>
+      { const names = ["aa", "bb", "cc", "dd"]
+       const [firstName, middleName, lastName, ...others] = names;
+       
+       console.info(firstName);
+       console.info(middleName);
+       console.info(lastName);
+       console.info(others);
+    }
+
+    {
+        const person = {
+            firstName: "aaa",
+            lastName: "bbb",
+            address:{
+                street: "ccc",
+                city: "ddd",
+                country: "eee"
+
+            },
+            hobby: "fff",
+            channel: "ggg"
+            
+        };
+
+        let {firstName, lastName, address:{city, street, country}, ...others} = person;
+        console.info(firstName);
+        console.info(lastName);
+        console.info(city);
+        console.info(street);
+        console.info(country);
+        console.info(others);
+    }
+
+    {
+        function displayPerson({firstName, middleName, lastName}){
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+
+        const person = {
+            firstName: "aaa",
+            middleName: "bbb",
+            lastName: "ccc",
+        };
+        displayPerson(person);
+    }
+
+    {
+        const person = {
+            firstName: "aaa",
+            lastName: "vvv"
+        };
+
+        let {firstName, middleName = "bbb", lastName} = person;
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+    }
+
+        
+    </script>
+</body>
+</html>

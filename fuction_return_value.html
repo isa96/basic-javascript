@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuction Return Value</title>
+</head>
+<body>
+    <script>
+       function sayHai(firstName, lastName){
+          const say = `Hai ${firstName} ${lastName}`;
+          return say;
+       }
+       const result = sayHai("aaa", "bbb");
+       document.writeln(`<p>${result}</p>`);
+
+       function getFinalValue(value){
+           if (value > 90){
+               return "A";
+           }
+           else if (value > 80){
+               return "B";
+           }
+           else if (value > 70){
+               return "C";
+           }
+           else if (value > 60){
+               return "D";
+           }
+           else {
+               return "E";
+           }
+       }
+
+       const finalValue = getFinalValue(76);
+       document.writeln(`<p>${finalValue}</p>`);
+
+       function isContains(array, searchValue){
+           for(const element of array){
+               console.info(`iterasi element ${element}`);
+               if(element === searchValue){
+                   return true;
+               }
+           }
+           return false;
+       }
+
+       const array = [1, 2, 3, 4, 5, 6];
+       const search = 2;
+       const found = isContains(array, search);
+       document.writeln(`<p>${found}</p>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nullish Coalescing Operator</title>
+</head>
+<body>
+    <script>
+        let parameter;
+        // Tanpa Nullish Operator
+        /*let data = parameter;
+        if (data === undefined || data === null){
+            data = "Default";
+        } 
+        document.writeln(`<p>${data}</p>`);*/
+        let data = parameter ?? "Default";
+        alert(data);
+    </script>
+</body>
+</html>

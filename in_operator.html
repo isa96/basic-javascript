@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Operator</title>
+</head>
+<body>
+    <script>
+      /* Cek properti apakah ada properti 
+         yang disebutkan dalam sebuah object
+         jika suatu variabel dalam object
+         terdapat data undefined/null tetap 
+         dianggap ada. Dianggap tidak ada apabila
+         memang tidak pernah ditulis properti tersebut */
+      const person = {
+          firstName : "aaa",
+          lastName : "bbb"
+      };
+      if ("firstName" in person){
+          alert(`Hai ${person.firstName}`);
+      }
+      else{
+          alert("????");
+      }
+       
+    </script>
+</body>
+</html>

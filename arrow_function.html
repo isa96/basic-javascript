@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+      const sayHello = (name) => {
+          const say = `Hi ${name}`;
+          console.info(say);
+      }
+
+      function giveMeName(callback){
+          callback("aaa");
+      }
+      giveMeName((name) => console.info(`Hi ${name}`));
+        
+    </script>
+</body>
+</html>

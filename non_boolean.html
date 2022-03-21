@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+    <script>
+        // Jika logika OR maka data yang diambil 
+        // yang bernilai truthy AND kebalikanya
+        // akan mengambil falsy
+        console.info("Hello" || "");
+        console.info("" || []);
+        console.info("0" || "Nol");
+        console.info(0 || "Nol");
+        console.info(null || "null");
+        console.info(undefined || "undefined");
+        //jika sama2 falsy maka nilai yg terkahir
+        // yang diambil yaitu false
+        console.info(0 || false);
+        
+        console.info("hello" && '');
+        console.info("" && []);
+        console.info("0" && "Nol");
+        console.info(0 && "Nol");
+        console.info(null && "Null");
+        console.info(undefined && "Undefined");
+        console.info("undefined" && "null");
+
+        const person = {
+            firstName:"",
+            lastName:"nnn"
+        };
+        const name = person.firstName || person.lastName;
+        console.info(name);
+
+    </script>
+</body>
+</html>

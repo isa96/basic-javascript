@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Of </title>
+</head>
+<body>
+    <script>
+       const person = {
+           firstName : "aaa",
+           middleName : "bbb",
+           lastName : "ccc"
+       };
+
+       console.info(person.firstName);
+       console.info(person.middleName)
+       console.info(person.lastName);
+
+       with (person){
+           console.info(firstName);
+           console.info(middleName);
+           console.info(lastName);
+       }
+    </script>
+</body>
+</html>
